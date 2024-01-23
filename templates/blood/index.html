@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+ <title> Blood Bank</title>
+ <link rel="icon" type="image/x-icon" href="static/image/favicon.jpg">
+<head>
+    <style>
+        .xyz{
+          margin-bottom: 0px;
+          background-image: url('{% static "image/homepage.jpg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .change_content:after {
+          content: "";
+          animation: changetext 10s infinite linear;
+          color: #000000;
+        }
+        @keyframes changetext {
+  0% {
+    content: "Your single drop of blood is an ocean to someone ";
+  }
+  20% {
+    content: "Be the reason for someone's heartbeat";
+  }
+  35% {
+    content: "Once a blood donor, Always a life saviour";
+  }
+  60% {
+    content: "Stay fit, eat right and donate blood";
+  }
+  80% {
+    content: "Every blood donor is a HERO";
+  }
+  100% {
+    content: "A single drop of blood can make a huge difference";
+  }
+}
+.box {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(3%, 258%);
+		  width: 600px;
+		  padding: 40px;
+		  box-sizing: border-box;
+		  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+		  border-radius: 10px;
+		  font-size: 15px;
+      background-color: red;
+      color: white;
+		}
+		.box1 {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-103%, 258%);
+		  width: 600px;
+		  padding: 40px;
+		  box-sizing: border-box;
+		  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+		  border-radius: 10px;
+		  font-size: 15px;
+      background-color: red;
+      color: white;
+		}
+    
+      </style>   
+</head>
+<body>
+  {% include "blood/navbar.html" %}
+<br>
+
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+    <div class="container text-center">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+      
+      <br><br><br><br>
+      
+    </div>  
+  </section>
+
+
+  <div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
+
+  <center> <h1><span class="change_content"> </span> <span style="margin-top: -10px"></span> </h1></center> 
+    
+    <p class="text-center"></p>
+    
+  </div>
+  <div style="background-color:rgba(0,0,0,0.2);">
+    <div class="box">
+    	<p><h2>ABOUT US</h2><br>Blood bank is a place where blood bag that is collected from blood donation events is stored in one place. The term “blood bank” refers to a division of a hospital laboratory where the storage of blood product occurs and where proper testing is performed to reduce the risk of transfusion related events . The process of managing the blood bag that is received from the blood donation events needs a proper and systematic management. The blood bag must be handled with care and treated thoroughly as it is related to someone’s life. This development of Web-based SRI VASAVI BLOOD BANK is to manage the blood bags.</p>
+    </div>
+    <div class="box1">
+    	<p><h2>Why Should I Donate Blood ?</h2><br>Blood is the most precious gift that anyone can give to another person the gift of life. A decision to donate your blood can save a life, or even several if your blood is separated into its components red cells, platelets and plasma which can be used individually for patients with specific conditions. Safe blood saves lives and improves health. It is also needed for regular transfusions for people with conditions such as thalassaemia and sickle cell disease and is used to make products such as clotting factors for people with haemophilia. There is a constant need for regular blood supply because blood can be stored for only a limited time before use. </p>
+    </div>
+    <center>
+    <div class="image">
+      <img src="{% static "image/info.jpg" %}" alt="800px" width="100%">
+    </div>
+  </div>
+</center>
+
+  
+</body>
+</html>
+
